@@ -1,6 +1,11 @@
+# Instalar herramientas de build modernas primero (en el entorno del deploy)
+pip==24.2
+wheel==0.43.0
+setuptools<70
+
 # === Core ===
 streamlit==1.34.0
-pandas==2.2.2
+pandas==2.1.4          
 numpy==1.26.4
 scikit-learn==1.4.2
 scipy==1.11.4
@@ -18,13 +23,12 @@ networkx==3.2.1
 nltk==3.8.1
 textblob==0.17.1
 
+# OpenAI (cliente 1.x; lo usas en app.py)
+openai==1.40.0
+
 # Exportaciones
 openpyxl==3.1.2
 xlsxwriter==3.2.0
 reportlab==3.6.12
 pillow==10.2.0
 kaleido==0.2.1
-
-# (Opcional, comentar o instalar local si lo necesitas)
-# gensim==4.3.2
-# NOTA: No instales 'serpapi'; usas Requests directamente.
